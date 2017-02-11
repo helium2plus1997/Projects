@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "659903809532",
+    "project_id": "a2aapp-cddda"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659903809532:android:a425ce6fcf8a2423",
+        "android_client_info": {
+          "package_name": "com.android.app.a2aapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659903809532-4e7ma2k6dp97i0v4os5uhdt893ev5426.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.app.a2aapp",
+            "certificate_hash": "B2AE26E7224244C38E8C2DAD1D233783DFC1FA2A"
+          }
+        },
+        {
+          "client_id": "659903809532-7sspcaibul4ftq8pltjouuq0ncv5dbts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwfBH0FCQr1uqpHYN0ddCxey9WL5hXr-Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

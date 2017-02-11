@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view2="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view2:cardBackgroundColor="#ffffff">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textSize="15dp"
+                android:textColor="#9acd32"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/id"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="20dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="2dp"
+                android:text="price"
+                android:id="@+id/product_name"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="20dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="2dp"
+                android:text="price"
+                android:id="@+id/price"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="20dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="2dp"
+                android:text="price"
+                android:id="@+id/qty"
+                android:textAlignment="center"/>
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

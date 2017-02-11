@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+    <!-- A CardView that contains a TextView -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:textSize="15dp"
+                android:textColor="#9acd32"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/id"
+                android:textAlignment="center"
+
+
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="20dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="2dp"
+                android:text="price"
+                android:id="@+id/product_name"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="20dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="2dp"
+                android:text="price"
+                android:id="@+id/price"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:textSize="20dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="2dp"
+                android:text="price"
+                android:id="@+id/qty"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+
+                android:textStyle="bold"
+                android:id="@+id/min"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:id="@+id/qty1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plus"
+                android:textStyle="bold"
+                android:text="+"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dbtn"
+
+
+            android:text="delete"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
