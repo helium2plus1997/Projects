@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/a2abackground5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/productsnum"
+            android:text="Number Of Products Uploaded:"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD A PRODUCT:"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/product"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORY:"
+        android:id="@+id/category"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:spinnerMode="dropdown">
+    </Spinner>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Price"
+            android:id="@+id/textView12"
+            android:layout_marginLeft="50dp" />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/price"
+            android:layout_marginLeft="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Per"
+            android:id="@+id/textView13"
+            android:layout_marginLeft="50dp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/perspinner"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="15dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:background="#f5a462"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:text="UPLOAD"/>
+
+</LinearLayout>

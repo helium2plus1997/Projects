@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">A2Aapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="facebook_app_id">365807916876748</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="search_label">Search</string>
+    <string name="search_hint">Search items from ListView</string>
+
+
+    <!--Navigation Drawer Menu Items-->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >My Profile</item>
+        <item>Call Operator</item>
+        <item>Help</item>
+        <item>SETTINGS</item>
+    </string-array>
+
+    <!--Navigation Drawer Menu Items-->
+
+    <string-array name="ret_nav_drawer_items">
+        <item >Home</item>
+        <item >Fruits</item>
+        <item >Vegetables</item>
+        <item>Cosmetics</item>
+        <item>Beverages</item>
+        <item>Groceries</item>
+        <item>Stationeries</item>
+        <item>Snacks</item>
+        <item>BrandedFoods</item>
+
+    </string-array>
+
+    <!-- Keep them in order as the titles are in -->
+     <array name="ret_nav_drawer_icons">
+         <item>@drawable/home</item>
+         <item>@drawable/fruits</item>
+         <item>@drawable/vegetables</item>
+         <item>@drawable/cosmetics</item>
+         <item>@drawable/ic_beverages</item>
+         <item>@drawable/ic_grocery</item>
+         <item>@drawable/stationery</item>
+         <item>@drawable/snacks</item>
+         <item>@drawable/brandedfood</item>
+     </array>
+     <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/home</item>
+        <item>@drawable/profile</item>
+        <item>@drawable/calloperator</item>
+        <item>@drawable/help1</item>
+    </array>
+   <!-- <string-array name="Items">
+        <item>Pens</item>
+        <item>DairyMilk</item>
+        <item>Celebrations</item>
+        <item>Vegetables</item>
+        <item>Carrots</item>
+        <item>White Tone</item>
+        <item>Himalaya Body Lotion</item>
+        <item>Eyetex</item>
+        <item>Dazler</item>
+        <item>Pens</item>
+        <item>DairyMilk</item>
+        <item>Celebrations</item>
+        <item>Vegetables</item>
+        <item>Carrots</item>
+        <item>White Tone</item>
+        <item>Himalaya Body Lotion</item>
+        <item>Eyetex</item>
+        <item>Dazler</item>
+    </string-array>-->
+
+    !-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="textTabTitle1" />
+    <string name="textTabTitle2" />
+    <string name="textTabTitle3" />
+    <string name="search">search</string>
+    <string name="searchbtn">searchbtn</string>
+    <string name="checkout">checkout</string>
+    <string name="choose_a_starting">Choose a starting ...</string>
+    <string name="choose_a_destination">Choose a destination...</string>
+    <string name="continuebutton">ContinueButton</string>
+</resources>

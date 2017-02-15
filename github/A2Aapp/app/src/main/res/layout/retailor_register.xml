@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:paddingLeft="10dp"
+                android:id="@+id/imageback" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="22dp"
+                android:text="REGISTRATION"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/retailor"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/retailor3_ic"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#26221e"
+            android:paddingLeft="10dp" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="22dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:text="Retailer Name"
+                    android:id="@+id/txname"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"
+                    android:layout_weight="0.29" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/name"
+                    android:textColor="#ffffff"
+                    android:layout_alignTop="@+id/textView2"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.73" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="32dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:text="Shop Name"
+                    android:id="@+id/txshopname"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/shopname"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignTop="@+id/textView3"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15dp"
+                    android:layout_weight="0.67" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="32dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:text="Address"
+                    android:id="@+id/txtaddr"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/addr"
+                    android:textColor="#ffffff"
+                    android:layout_alignTop="@+id/textView5"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15dp"
+                    android:layout_weight="0.55" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="32dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:text="User Name"
+                    android:id="@+id/txusername"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/username"
+                    android:textColor="#ffffff"
+                    android:layout_alignTop="@+id/textView5"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15dp"
+                    android:layout_weight="0.55" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="32dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:text="Password"
+                    android:id="@+id/txpassword"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/etpassword"
+                    android:textColor="#ffffff"
+                    android:layout_alignTop="@+id/textView5"
+                    android:layout_alignParentRight="true"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    android:layout_weight="0.55" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="32dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Location"
+                    android:id="@+id/txtlocation"
+                    android:layout_alignTop="@+id/pword"
+                    android:layout_alignRight="@+id/textView6"
+                    android:textSize="20dp"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="134dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:layout_width="146dp"
+                        android:layout_height="40dp"
+                        android:textColor="#ffffff"
+                        android:ems="10"
+                        android:id="@+id/latitude"
+                        android:layout_alignLeft="@+id/uname"
+                        android:layout_below="@+id/textView5"
+                        android:textSize="18dp"
+                        android:hint="Latitude"
+                        android:textColorHint="#FFFFFF" />
+
+                    <EditText
+                        android:layout_width="146dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/longitude"
+                        android:hint="Longitude"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="18dp"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/gmapbtn"
+                    android:src="@drawable/gmaps"
+                    android:layout_weight="0.43"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="About shop"
+                    android:id="@+id/txaboutshop"
+                    android:layout_alignTop="@+id/pword"
+                    android:layout_alignRight="@+id/textView6"
+                    android:textSize="20dp"/>
+
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:textColor="#ffffff"
+                    android:ems="10"
+                    android:id="@+id/aboutshop"
+                    android:layout_alignLeft="@+id/uname"
+                    android:layout_below="@+id/textView5"
+                    android:textSize="15dp"
+                    android:layout_weight="0.66" />
+            </LinearLayout>
+            <Button
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/retailerreg"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="REGISTER"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
