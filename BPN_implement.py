@@ -49,7 +49,7 @@ class BackPropNeuralNetwork(object):
     self.W1 = np.asarray(W1, dtype=np.float32)
     self.W2 = np.asarray(W2, dtype=np.float32)
 
-  def forward(self, X):
+  def NetInput(self, X):
     
     self.DotProd = np.dot(X, self.W1)
     self.DotProd2 = self.sigmoid(self.DotProd) 
@@ -65,10 +65,10 @@ class BackPropNeuralNetwork(object):
 
     return s * (1 - s)
 
-  def BackPropagate_Error(self, X, y, o):
+  def BackPropagate_Error(self, X, y, op_error):
   
-    self.output_error = y - o
-    self.o_delta = self.output_error*self.sigmoidPrime(o)
+    self.output_error = y - op_error
+    self.o_delta = self.output_error*self.sigmoidPrime(op_error)
 
     self.DotProd2_error = self.o_delta.dot(self.W2.T)
     self.DotProd2_delta = self.DotProd2_error*self.sigmoidPrime(self.DotProd2) 
@@ -76,8 +76,8 @@ class BackPropNeuralNetwork(object):
     self.W2 += self.DotProd2.T.dot(self.o_delta) 
 
   def trainNeuralNetwork (self, X, y):
-    o = self.forward(X)
-    self.BackPropagate_Error(X, y, o)
+    op_HidToOut = self.NetInput(X)
+    self.BackPropagate_Error(X, y, op_HidToOut)
 
 NN = BackPropNeuralNetwork()
 
@@ -88,9 +88,9 @@ mse=1
 for i in range(1000) or mse!=threshold :
     
   print("Input Matrix: \n" + str(X))
-  print("Desired Output: \n" + str(NN.forward(X))) 
+  print("Desired Output: \n" + str(NN.NetInput(X))) 
   print("Actual Output: \n" + str(y)) 
 
-  mse=np.mean(np.square(y - NN.forward(X)))
+  mse=np.mean(np.square(y - NN.NetInput(X)))
   print("Error: \n" + str(mse))
   NN.trainNeuralNetwork(X, y)
