@@ -75,6 +75,7 @@ class BackPropNeuralNetwork(object):
     self.W1 += X.T.dot(self.DotProd2_delta) 
     self.W2 += self.DotProd2.T.dot(self.o_delta) 
 
+    
   def trainNeuralNetwork (self, X, y):
     op_HidToOut = self.NetInput(X)
     self.BackPropagate_Error(X, y, op_HidToOut)
@@ -94,3 +95,12 @@ for i in range(1000) or mse!=threshold :
   mse=np.mean(np.square(y - NN.NetInput(X)))
   print("Error: \n" + str(mse))
   NN.trainNeuralNetwork(X, y)
+    
+
+print("Weight Matrix,W1 (Input --> Hidden Layer:")
+print(NN.W1)
+
+
+print("Weight Matrix,W2 (Hidden --> Output Layer:")
+print(NN.W2)
+
