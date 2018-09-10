@@ -67,12 +67,12 @@ class BackPropNeuralNetwork(object):
   def BackPropagate_Error(self, X, y, op_error):
   
     self.output_error = y - op_error
-    self.o_delta = self.output_error*self.sigmoidPrime(op_error)
+    self.op_delta = self.output_error*self.sigmoidPrime(op_error)
 
-    self.DotProd2_error = self.o_delta.dot(self.W2.T)
+    self.DotProd2_error = self.op_delta.dot(self.W2.T)
     self.DotProd2_delta = self.DotProd2_error*self.sigmoidPrime(self.DotProd2) 
     self.W1 += X.T.dot(self.DotProd2_delta) 
-    self.W2 += self.DotProd2.T.dot(self.o_delta) 
+    self.W2 += self.DotProd2.T.dot(self.op_delta) 
 
     
   def trainNeuralNetwork (self, X, y):
@@ -84,8 +84,9 @@ NN = BackPropNeuralNetwork()
 #learning parameters, threshold value & Initial residual error set to 1.
 threshold=0.0005
 mse=1
+max_iterations=100000
 
-for i in range(1000) or mse!=threshold :
+for i in range(max_iterations) or mse<threshold :
     
   print("Input Matrix: \n" + str(X))
   print("Desired Output: \n" + str(NN.NetInput(X))) 
