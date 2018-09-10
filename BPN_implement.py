@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Sep 10 19:24:52 2018
-
 @author: heerokbanerjee
 """
 
@@ -97,10 +96,9 @@ for i in range(1000) or mse!=threshold :
   NN.trainNeuralNetwork(X, y)
     
 
-print("Weight Matrix,W1 (Input --> Hidden Layer:")
+print("Weight Matrix,W1 (Input --> Hidden Layer) :")
 print(NN.W1)
 
 
-print("Weight Matrix,W2 (Hidden --> Output Layer:")
+print("Weight Matrix,W2 (Hidden --> Output Layer) :")
 print(NN.W2)
-
