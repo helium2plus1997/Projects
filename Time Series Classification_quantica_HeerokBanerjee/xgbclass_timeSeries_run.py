@@ -9,6 +9,7 @@ contact-heerok.banerjee@hotmail.com
 www.heerokbanerjee.in
 """
 import numpy as np
+import pandas as pd
 from pyspark.ml.classification import DecisionTreeClassifier
 from pyspark.ml.feature import VectorAssembler
 
@@ -68,9 +69,9 @@ input_vec=input_vec.drop("FeaA","FeaB","FeaC","FeaD","FeaE")
 ###  
 ###
 params = {
-    'max_depth': 5, 
+    'max_depth': 2, 
     'eta': 0.3,  
-    'silent': 1,
+    'silent': 0,
     'num_class': 5,
     'objective': 'multi:softprob'} 
      
@@ -91,8 +92,15 @@ print(xgbmodel)
 xgb_output=xgbmodel.predict(xgb_test)
 print(xgb_output)
 
+
 predictions = np.asarray([np.argmax(line) for line in xgb_output])
 print(predictions)
+
+col=["Label"]
+label_df=pd.DataFrame(predictions, columns=col)
+print("Predicted Classes")
+print(label_df)
+
 
 ### Determining Accuracy Score
 ###
@@ -105,5 +113,26 @@ mse = mean_squared_error(Y_test, predictions)
 print("MSE: ",mse)
 
 
+#********************************
+### Predicting for Test dataset
+### filename- test.csv
+
+raw_test_data=pd.read_csv("mle_task/train.csv")
+test_data = spark_read("mle_task/train.csv")
+test_data = convert_to_numeric(test_data)
+
+test_vec=vec_assembler.transform(test_data)
+test_nparray=np.array(test_vec.select("vecFea").collect())
+test_nparray=np.squeeze(test_nparray,axis=1)
+test_input= xgb.DMatrix(test_nparray,label=Y_test)
+
+output=xgbmodel.predict(test_input)
+print(output)
+
+output_class = np.asarray([np.argmax(line) for line in output])
+print(output_class)
+
+print(output_class.shape)
+print(raw_test_data.shape)
 
 
