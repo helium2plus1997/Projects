@@ -41,6 +41,6 @@ because of improper paramters.
 
 4. If you had more time, what improvements would you make, and in what order of priority?
 
-	1. I would have classified with neural networks, preferably with an LSTM model.
+	1) I would have classified with neural networks, preferably with an LSTM model.
 
-	2. I would have fine-tuned the learning parameters as per the sample size.
+	2) I would have fine-tuned the learning parameters as per the sample size.
