@@ -27,11 +27,15 @@ Trade-offs:
 2. What's the model performance?
 
 The model performance is convincingly good.
-Accuracy of the model is 99.25%. And, the root mean square error is 0.0479, which is convincing. However, I feel that the learning parameters are overcalibarated which migh lead to poor runtime performance.
+Accuracy of the model is 99.25%. And, the root mean square error is 0.0479,which is convincing.
+However, I feel that the learning parameters are overcalibarated which migh lead to poor runtime
+performance.
 
 3. What's the runtime performance? What is the complexity? Where are the bottlenecks?
 
-Runtime Performance is poor. The pipeline model is consistent, although some of the test sample are impure. But, the XGBoostCLassifier consumes a lot of time. Possibly, because of improper paramters.
+Runtime Performance is poor. The pipeline model is consistent, although some of the test 
+samples are impure. But, the XGBoostCLassifier consumes a lot of time. Possibly, 
+because of improper paramters.
 
 4. If you had more time, what improvements would you make, and in what order of priority?
 
