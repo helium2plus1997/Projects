@@ -30,7 +30,7 @@ Trade-offs:
 
 The model performance is convincingly good.
 Accuracy of the model is 99.25%. And, the root mean square error is 0.0479,which is convincing.
-However, I feel that the learning parameters are overcalibarated which migh lead to poor runtime
+However, I feel that the learning parameters are overcalibarated which might lead to poor runtime
 performance.
 
 3. What's the runtime performance? What is the complexity? Where are the bottlenecks?
