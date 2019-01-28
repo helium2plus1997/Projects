@@ -13,7 +13,7 @@ The approach I employed can be categorically represented as : Preprocessing + Di
 + Classification + Parameter Tuning.
 
 For Pre-processing the data, I used StringIndexer to label 'Timestamp';
-But for an optimized runtime performance, I just dropped 'Timestamp' from dataframe.
+But for an optimized model performance, I just dropped 'Timestamp' from dataframe.
 Consequently, I employed VectorAssembler to assembler five features as one VectorArray. 
 I modelled a xgb.XGBoostClassifier and trained the model with the given training dataset.
 Then, I moderated the learning parameters to optimize the model performance.
