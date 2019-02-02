@@ -11,3 +11,6 @@ This chatbot application is a native android application that uses opensource Si
 
 ### 2.Object Detection
 This project is based on python3 using numpy,matplotlib and opencv which uses Haar Cascade Classfiers to detect face mesh.I have used a training algorithm to train the system to detect individual faces from a reference dataset, which consists of a list of Haar Cascade classifiers for n number of individuals.
+
+### 3. Time-Series Classification using XGBoost Classifier
+In this project, I have used ML pipeline architectures to distribute sequencial preprocessing using Apache PySpark library. The pipeline consists of [LabelIndexer-->StringIndexer-->VectorAssembler-->PCA]--> XGBoostClassifer. I have used xgb.XGBoostClassifier to perform classification on normalized vectors. The model accuracy was 98.52%.
