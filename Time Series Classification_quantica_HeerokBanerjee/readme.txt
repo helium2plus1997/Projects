@@ -29,7 +29,7 @@ Trade-offs:
 2. What's the model performance?
 
 The model performance is convincingly good.
-Accuracy of the model is 99.25%. And, the root mean square error is 0.0479,which is convincing.
+Accuracy of the model is 98.52%. And, the root mean square error is 0.0479,which is convincing.
 However, I feel that the learning parameters are overcalibarated which might lead to poor runtime
 performance.
 
